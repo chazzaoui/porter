@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* porterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* porterTests.m */; };
-		136F3B4FA7C615C3468A72AE /* libPods-porter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5538B3CB719E7966581A6425 /* libPods-porter.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -17,6 +16,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* porterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* porterTests.m */; };
+		609C657D241AF6B300CE56FB /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C657C241AF6B300CE56FB /* libRNGestureHandler.a */; };
+		609C657F241AF6DE00CE56FB /* libPods-porter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C657E241AF6DE00CE56FB /* libPods-porter.a */; };
 		AD7EA26A2A6DA02562741875 /* libPods-porter-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EE637AE4FF274D62BE5269 /* libPods-porter-tvOS.a */; };
 		BD90EEC571988CF6CA9C9D1D /* libPods-porter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 895A14AE0BE517843160EC22 /* libPods-porter-tvOSTests.a */; };
 		C8ACC750A99F22F2A018F753 /* libPods-porterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9182F893800171C7CE45A250 /* libPods-porterTests.a */; };
@@ -55,6 +56,8 @@
 		2D02E4901E0B4A5D006451C7 /* porter-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "porter-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D48EB3C3CDCD9818FD9FF18 /* Pods-porter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-porter-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-porter-tvOS/Pods-porter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5538B3CB719E7966581A6425 /* libPods-porter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-porter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		609C657C241AF6B300CE56FB /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		609C657E241AF6DE00CE56FB /* libPods-porter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-porter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		700BB7EE368E024632DB4DED /* Pods-porterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-porterTests.debug.xcconfig"; path = "Target Support Files/Pods-porterTests/Pods-porterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E07674A93C78058169BB249 /* Pods-porter-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-porter-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-porter-tvOSTests/Pods-porter-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		895A14AE0BE517843160EC22 /* libPods-porter-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-porter-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				136F3B4FA7C615C3468A72AE /* libPods-porter.a in Frameworks */,
+				609C657F241AF6DE00CE56FB /* libPods-porter.a in Frameworks */,
+				609C657D241AF6B300CE56FB /* libRNGestureHandler.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +143,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				609C657E241AF6DE00CE56FB /* libPods-porter.a */,
+				609C657C241AF6B300CE56FB /* libRNGestureHandler.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				5538B3CB719E7966581A6425 /* libPods-porter.a */,
@@ -194,7 +200,6 @@
 				700BB7EE368E024632DB4DED /* Pods-porterTests.debug.xcconfig */,
 				FAA1F5F328260985F45E7385 /* Pods-porterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +313,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
