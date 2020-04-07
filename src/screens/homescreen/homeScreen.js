@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import {
-  View,
-  Text,
+  Dimensions,
   Image,
   FlatList,
+  SafeAreaView,
   StyleSheet,
-  Dimensions,
+  Text,
+  View,
 } from 'react-native';
 
 const {width} = Dimensions.get('window');
@@ -24,17 +25,23 @@ const HomeScreen = ({navigation}) => {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <FlatList
         data={state && state}
         keyExtractor={item => item.id}
         renderItem={({item}) => {
           return (
-            <Image style={styles.image} source={{uri: item.urls.regular}} />
+            <View>
+              <Image
+                style={styles.profileImage}
+                source={{uri: item.user.profile_image.medium}}
+              />
+              <Image style={styles.image} source={{uri: item.urls.regular}} />
+            </View>
           );
         }}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -49,6 +56,12 @@ const styles = StyleSheet.create({
     height: width * 0.8,
     borderRadius: 20,
     marginBottom: 10,
+  },
+  profileImage: {
+    borderRadius: width * 0.075,
+    marginVertical: 10,
+    height: width * 0.15,
+    width: width * 0.15,
   },
 });
 
