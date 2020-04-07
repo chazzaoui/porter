@@ -5,13 +5,13 @@ import HomeScreen from '../../homeScreen';
 
 const Stack = createStackNavigator();
 
-function MyStack() {
+const MyStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Details" component={DetailScreen} />
     </Stack.Navigator>
   );
-}
+};
 
 export default MyStack;
