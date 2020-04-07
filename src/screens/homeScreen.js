@@ -3,7 +3,6 @@ import axios from 'axios';
 import {
   View,
   Text,
-  Button,
   Image,
   FlatList,
   StyleSheet,
@@ -24,9 +23,8 @@ const HomeScreen = ({navigation}) => {
       });
   }, []);
 
-  console.log(state, 'hallo!!1');
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={styles.container}>
       <FlatList
         data={state && state}
         keyExtractor={item => item.id}
@@ -41,6 +39,11 @@ const HomeScreen = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
+  },
   image: {
     width: width * 0.9,
     height: width * 0.8,
