@@ -15,11 +15,12 @@ import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 
 import MyStack from './src/screens/components/navigation/stackNavigator';
+import MyTab from './src/screens/components/navigation/tabNavigator';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <MyStack />
+      <MyTab />
     </NavigationContainer>
   );
 };

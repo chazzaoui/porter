@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 const Profile = () => {
   return (
     <View style={styles.container}>
-      <Text>Upload</Text>
+      <Text>Profile</Text>
     </View>
   );
 };
